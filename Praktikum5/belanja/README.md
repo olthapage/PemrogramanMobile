@@ -14,3 +14,20 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# 📱 "Belanja" Application Project
+
+---
+
+## 🧪 Praktikum 5
+Membangun Navigasi di Flutter
+![Praktikum 5](./Images/praktikum5_a.jpeg)  
+![Praktikum 5](./Images/praktikum5_b.jpeg)  
+
+---
+
+## 🧪 Tugas Praktikum 2
+![Tugas Praktikum 2](./Images/Tugaspraktikum2_a.jpeg) 
+![Tugas Praktikum 2](./Images/Tugaspraktikum2_b.jpeg)  
+
+---
