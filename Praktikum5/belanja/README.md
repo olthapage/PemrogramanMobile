@@ -27,7 +27,7 @@ Membangun Navigasi di Flutter
 ---
 
 ## 🧪 Tugas Praktikum 2
-![Tugas Praktikum 2](./Images/Tugaspraktikum2_a.jpeg) 
-![Tugas Praktikum 2](./Images/Tugaspraktikum2_b.jpeg)  
+![Tugas Praktikum 2](./Images/TugasPraktikum2_a.jpeg) 
+![Tugas Praktikum 2](./Images/TugasPraktikum2_b.jpeg)  
 
 ---
