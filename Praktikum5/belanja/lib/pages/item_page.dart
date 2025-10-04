@@ -2,18 +2,36 @@ import 'package:flutter/material.dart';
 import '../models/item.dart';
 
 class ItemPage extends StatelessWidget {
-  const ItemPage({super.key}); 
+  final Item item;
+  const ItemPage({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
-    final Item item = ModalRoute.of(context)!.settings.arguments as Item;
-
     return Scaffold(
-      appBar: AppBar(
-        title: Text(item.name),
-      ),
-      body: Center(
-        child: Text('${item.name} with ${item.price}'),
+      appBar: AppBar(title: Text(item.name)),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Hero(
+              tag: item.name,
+              child: Image.asset(item.imageUrl, height: 250, fit: BoxFit.cover),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              item.name,
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            Text('Harga: Rp ${item.price}'),
+            Text('Stok: ${item.stock}'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.star, color: Colors.amber),
+                Text('${item.rating} / 5'),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

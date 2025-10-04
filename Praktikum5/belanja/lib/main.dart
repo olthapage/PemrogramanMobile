@@ -1,29 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'pages/home_page.dart';
 import 'pages/item_page.dart';
+import 'models/item.dart';
 
 void main() {
-  runApp(MaterialApp(
-    initialRoute: '/',
-    routes: {
-      '/': (context) => HomePage(),
-      '/item': (context) => ItemPage(),
-    },
-  )); // MaterialApp
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    final GoRouter router = GoRouter(
+      routes: [
+        GoRoute(
+          path: '/',
+          builder: (context, state) => HomePage(),
+        ),
+        GoRoute(
+          path: '/item',
+          builder: (context, state) {
+            final item = state.extra as Item;
+            return ItemPage(item: item);
+          },
+        ),
+      ],
+    );
+
+    return MaterialApp.router(
+      title: 'Belanja App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      routerConfig: router,
     );
   }
 }
