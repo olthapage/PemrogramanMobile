@@ -17,9 +17,6 @@ samples, guidance on mobile development, and a full API reference.
 
 # 📱 Praktikum Flutter Layout
 
-Repositori ini berisi hasil **Praktikum 1 - 4** dari mata kuliah **Pemrograman Mobile** menggunakan **Flutter**.  
-Setiap praktikum menampilkan hasil layout berbeda dengan penjelasan singkat.
-
 ---
 
 ## 🧪 Praktikum 1
