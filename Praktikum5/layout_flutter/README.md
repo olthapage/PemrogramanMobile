@@ -21,7 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## 🧪 Praktikum 1
 ![Praktikum 1](./images/praktikum1_a.jpeg)
-Pada praktikum ini dibuat layout dasar Flutter yang menampilkan judul dan lokasi wisata.
+Membangun Layout di Flutter.
 
 ---
 
@@ -32,18 +32,18 @@ full view.
 
 ## 🧪 Praktikum 2
 ![Praktikum 2](./images/praktikum2.jpeg)  
-Layout ditambahkan dengan ikon interaktif dan teks deskripsi singkat tentang lokasi wisata.
+Implementasi button row.
 
 ---
 
 ## 🧪 Praktikum 3
 ![Praktikum 3](./images/praktikum3.jpeg)  
-Halaman dikembangkan dengan menambahkan kolom teks panjang dan tombol interaksi.
+Implementasi text section.
 
 ---
 
 ## 🧪 Praktikum 4
 ![Praktikum 4](./images/praktikum4.jpeg)  
-Layout akhir menampilkan gambar, deskripsi lengkap, serta ikon yang berfungsi pada tampilan utama.
+Implementasi image section.
 
 ---
