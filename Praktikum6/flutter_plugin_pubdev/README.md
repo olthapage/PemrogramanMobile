@@ -22,7 +22,7 @@ Terdapat error pada langkah ini.
 Error terjadi karena widget menggunakan AutoSizeText tetapi package auto_size_text belum diimpor, sehingga Flutter tidak mengenali kelas tersebut. Selain itu, variabel text tidak didefinisikan dalam widget, sehingga menyebabkan error saat dipanggil. Untuk memperbaikinya, tambahkan dependensi auto_size_text di pubspec.yaml, lakukan import pada file, dan jadikan text sebagai parameter agar widget bisa menerima nilai teks.
 
 # Output 
-![Hasil Tampilan Praktikum](./Images/praktikum1_4.jpeg)
+![Hasil Tampilan Praktikum](./Images/praktikum1.jpeg)
 
 # TUGAS PRAKTIKUM
 1. Jelaskan maksud dari langkah 2 pada praktikum tersebut!
