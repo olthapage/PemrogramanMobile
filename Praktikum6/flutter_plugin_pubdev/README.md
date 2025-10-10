@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
 # Langkah 4 : Tambah Widget AutoSize Text
 Terdapat error pada langkah ini.
 ![Error](./Images/error_langkah_4.jpeg)
-Error terjadi karena widget menggunakan AutoSizeText tetapi package auto_size_text belum diimpor, sehingga Flutter tidak mengenali kelas tersebut. Selain itu, variabel text tidak didefinisikan dalam widget, sehingga menyebabkan error saat dipanggil. Untuk memperbaikinya, tambahkan dependensi auto_size_text di pubspec.yaml, lakukan import pada file, dan jadikan text sebagai parameter agar widget bisa menerima nilai teks.
+Error terjadi karena widget menggunakan AutoSizeText tetapi package auto_size_text belum diimpor, sehingga Flutter tidak mengenali kelas tersebut. Selain itu, variabel text tidak didefinisikan dalam widget, sehingga menyebabkan error saat dipanggil.
 
 # Output 
 ![Hasil Tampilan Praktikum](./Images/praktikum1.jpeg)
