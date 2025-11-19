@@ -92,8 +92,10 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
                         children: const [
                           Icon(Icons.note, size: 100, color: Colors.grey),
                           SizedBox(height: 12),
-                          Text('Anda belum memiliki rencana apapun.',
-                              style: TextStyle(fontSize: 16)),
+                          Text(
+                            'Anda belum memiliki rencana apapun.',
+                            style: TextStyle(fontSize: 16),
+                          ),
                         ],
                       ),
                     );
@@ -104,17 +106,23 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
                     itemBuilder: (context, index) {
                       final p = plans[index];
                       return Card(
-                        margin:
-                            const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+                        margin: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                          vertical: 6,
+                        ),
                         child: ListTile(
                           title: Text(p.name),
                           subtitle: Text(p.completenessMessage),
-                          trailing:
-                              const Icon(Icons.arrow_forward_ios, size: 16),
+                          trailing: const Icon(
+                            Icons.arrow_forward_ios,
+                            size: 16,
+                          ),
                           onTap: () {
-                            Navigator.of(context).push(MaterialPageRoute(
-                              builder: (_) => PlanScreen(plan: p),
-                            ));
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => PlanScreen(plan: p),
+                              ),
+                            );
                           },
                         ),
                       );
