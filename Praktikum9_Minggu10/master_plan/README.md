@@ -17,6 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Praktikum 1
 ![Output Praktikum 1](Images/praktikum1.jpeg)
+Aplikasi Master Plan yang sudah bisa tampil dan berjalan normal, dengan daftar task yang bisa dicentang dan diedit. Ini adalah tampilan ketika state masih sederhana dan struktur kode masih fokus pada UI dasar. VSCode di sampingnya hanya memperlihatkan file dan widget tree yang masih menggunakan alur awal tanpa manajemen state yang kompleks.
 
 ### Soal
 1. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
@@ -32,6 +33,20 @@ Variabel plan dipakai karena halaman butuh satu objek Plan sebagai tempat menyim
 Pada Langkah 11, initState() dipakai untuk menyiapkan apa pun yang harus berjalan sekali di awal, termasuk membuat ScrollController dan menambahkan listener. Listener itu dipakai agar saat daftar discroll, fokus keyboard otomatis hilang.
 
 Pada Langkah 13, dispose() dipakai untuk membersihkan controller ketika widget sudah tidak dipakai lagi, supaya tidak ada kebocoran memori (memory leak).
+
+## Praktikum 2
+![Output Praktikum 2](Images/praktikum2.jpeg)
+Aplikasi yang sudah memakai PlanProvider. Ini terlihat dari bagian bawah layar browser yang sudah menampilkan pesan “x out of y tasks”, yang berarti method pada model dan state-sharing sudah bekerja. Perubahan pada checkbox atau teks langsung memperbarui tampilan karena state Plan sekarang dikelola lewat ValueNotifier dan InheritedNotifier. VSCode juga terlihat sudah mengimpor plan_provider dan data_layer, menandakan aplikasi sudah berada pada tahap lanjutan dengan manajemen state yang benar.
+
+### Soal
+1. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+InheritedWidget yang dimaksud pada langkah 1 adalah PlanProvider itu sendiri, karena kelas tersebut mewarisi InheritedNotifier dan berfungsi sebagai widget yang membagikan data ke seluruh widget di bawahnya. Praktikum memakai InheritedNotifier karena selain membagikan data seperti InheritedWidget, ia juga otomatis memberi notifikasi ke widget lain ketika nilai Plan berubah, sehingga UI bisa memperbarui diri tanpa perlu setState di semua tempat.
+
+2. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+Kedua method itu dipakai untuk menghitung berapa tugas yang sudah selesai dan menampilkan ringkasannya dalam bentuk teks. Ini dilakukan supaya logika perhitungan tetap berada di dalam model Plan, bukan di UI, sehingga kode lebih rapi, mudah dipakai kembali, dan tampilan hanya tinggal memanggil hasilnya.
+
 
 
 
