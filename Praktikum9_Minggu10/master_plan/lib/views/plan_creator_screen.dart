@@ -42,7 +42,7 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
     return Scaffold(
       backgroundColor: kBackgroundColor,
       appBar: AppBar(
-        title: const Text('Master Plans Rere'),
+        title: const Text('Master Plans Oltha'),
         backgroundColor: kPurpleColor,
       ),
       body: Padding(

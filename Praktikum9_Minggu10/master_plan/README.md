@@ -47,6 +47,19 @@ InheritedWidget yang dimaksud pada langkah 1 adalah PlanProvider itu sendiri, ka
 
 Kedua method itu dipakai untuk menghitung berapa tugas yang sudah selesai dan menampilkan ringkasannya dalam bentuk teks. Ini dilakukan supaya logika perhitungan tetap berada di dalam model Plan, bukan di UI, sehingga kode lebih rapi, mudah dipakai kembali, dan tampilan hanya tinggal memanggil hasilnya.
 
+## Praktikum 3
+![Output Praktikum 3](Images/final_1.jpeg)
+![Output Praktikum 3](Images/final_2.jpeg)
+Mengubah aplikasi dari yang hanya bisa mengelola satu rencana di satu layar, menjadi aplikasi yang mampu mengelola banyak rencana di dua layar terpisah dengan menggunakan PlanProvider sebagai sumber state tunggal yang dibagikan (State di Multiple Screens).
+
+### Soal
+1. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram
+
+Diagram tersebut menunjukkan perubahan pada Widget Tree (struktur hirarki widget di Flutter) yang terjadi ketika Anda berpindah dari satu layar ke layar lainnya menggunakan Navigator.push().
+
+Pada awalnya, PlanCreatorScreen berada di bawah MaterialApp dan PlanProvider, yang menyimpan List<Plan> sebagai state bersama. Saat pengguna menavigasi ke PlanScreen dengan Navigator.push, layar baru muncul di atas stack, tapi PlanProvider tetap ada sehingga state yang sama bisa diakses. Setiap perubahan di PlanScreen otomatis memengaruhi PlanCreatorScreen karena keduanya menggunakan state yang sama. Dengan menempatkan state di atas kedua layar, data dapat dibagikan lintas layar sesuai prinsip "Lift State Up".
+
+
 
 
 

@@ -18,7 +18,7 @@ class MasterPlanApp extends StatelessWidget {
         ]),
       ]),
       child: MaterialApp(
-        title: 'Master Plan Rere',
+        title: 'Master Plan Oltha',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.purple),
         home: const PlanCreatorScreen(),
